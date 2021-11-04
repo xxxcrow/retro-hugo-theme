@@ -1,0 +1,97 @@
+@font-face {
+  font-family: 'AfternoonRegular';
+  src: url(fonts/AfternoonRegular-Wy0DG.ttf);
+}
+@font-face {
+  font-family: 'Fifaks10Dev1';
+  src: url(fonts/Fifaks10Dev1-K7avW.ttf);
+}
+@font-face {
+  font-family: 'Kissinger-1GMY0';
+  src: url(fonts/Kissinger-1GMY0.ttf);
+}
+@font-face {
+  font-family: 'PlaymegamesReguler';
+  src: url(fonts/PlaymegamesReguler-2OOee.ttf);
+}
+
+:root {
+  --color1: #ffffff;
+  --color2: #ffffff;
+  --color3: #ffffff;
+  --color4: #000000;
+  --border-button: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8" ?><svg version="1.1" width="5" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2 1 h1 v1 h-1 z M1 2 h1 v1 h-1 z M3 2 h1 v1 h-1 z M2 3 h1 v1 h-1 z" fill="rgb(250,250,250)" /></svg>');
+  --border-container: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8" ?><svg version="1.1" width="8" height="8" xmlns="http://www.w3.org/2000/svg"><path d="M3 1 h1 v1 h-1 z M4 1 h1 v1 h-1 z M2 2 h1 v1 h-1 z M5 2 h1 v1 h-1 z M1 3 h1 v1 h-1 z M6 3 h1 v1 h-1 z M1 4 h1 v1 h-1 z M6 4 h1 v1 h-1 z M2 5 h1 v1 h-1 z M5 5 h1 v1 h-1 z M3 6 h1 v1 h-1 z M4 6 h1 v1 h-1 z" fill="%23000000" /></svg>');
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: Fifaks10Dev1;
+}
+
+html, body, pre, code, kbd, samp {
+    font-family: Fifaks10Dev1;
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    color: var(--color4);
+    background-color: var(--color1);
+    }
+
+.nes-btn{
+    border-image-source: var(--border-button);
+    color: var(--color4);
+    background-color: var(--color2);
+  }
+.nes-container{
+  background-color: var(--color2);
+  border-color: var(--color3);
+}
+.nes-container.is-rounded{
+    border-image-source: var(--border-container);
+    margin-bottom: 1rem;
+}
+.nes-container.is-rounded.is-outer{
+    background-color: var(--color2);
+}
+.nes-container.is-rounded.is-inner{
+  background-color: var(--color3);
+}
+
+img {
+  max-width: 100%;
+}
+pre{
+  padding: 0.5rem;}
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+    padding: 1rem;
+  }
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    html, body, pre, code, kbd, samp {
+        font-size: 1.25rem;
+        padding: 1rem;
+        }
+        pre{
+          padding: 0.5rem;}
+  }
+
+@media only screen and (min-width: 1080px) {
+    /* For desktop: */
+    html, body, pre, code, kbd, samp {
+        font-size: 1.25rem;
+        padding: 5rem;
+        }
+        pre{
+          padding: 0.5rem;}
+    }
+

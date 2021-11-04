@@ -1,0 +1,14 @@
+<p class="footer text-center">Copyright (c) {{ now.Format "2006"}} John Doe</p>
+
+
+{{ range .Site.Params.pixelTheme -}}
+    <link rel="stylesheet" href="{{ . | absURL }}">
+{{- end }}
+
+{{ range .Site.Params.customCSS -}}
+    <link rel="stylesheet" href="{{ . | absURL }}">
+{{- end }}
+
+{{ range .Site.Params.customJS -}}
+    <script type="text/javascript" src="{{ . | absURL }}"></script>
+{{- end }}
